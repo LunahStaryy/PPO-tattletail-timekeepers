@@ -1,7 +1,14 @@
+body {
+background-color: black;
+
+}
+
 #videoIntro {
-display: block;
-height: auto;
-width: auto;
-
-
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    right: 50%;
+    left: 50%;
 }
