@@ -9,12 +9,18 @@
 </head>
 
 <body>
-
-    <div>
+    
+    <div id="telaInicial">
+        <h1 class="titulo" id="t1">Playtime is</h1>
+        <h2 class="titulo" id="t2">OVER</h2>
         <button id="botaoStart">Start</button>
+        <video id="videoIntro" autoplay loop muted>
+            <source src="videoIntro.mp4" type="video/mp4">
+        </video>
     </div>
+    
     <div id="cena1">
-        <p class="texto" >placeholder</p>
+        <p class="texto">placeholder</p>
         <p class="texto">1</p>
         <p class="texto">1</p>
         <p class="texto">1</p>
@@ -33,11 +39,6 @@
 
     </div>
 
-    <div id="videoIntro">
-        <video id="videoIntro" autoplay loop muted>
-            <source src="videoIntro.mp4" type="video/mp4">
-        </video>
-    </div>
 
     <script src="jogo.js"></script>
 </body>

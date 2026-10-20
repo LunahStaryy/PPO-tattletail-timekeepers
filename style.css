@@ -1,6 +1,47 @@
 body {
     background-color: black;
+}
 
+/*LEMBRAR DO Z INDEXXX
+
+
+#teste {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 3;
+    top: 100px;
+    left: 800px;
+    opacity: 0;
+}
+ modelo botoes
+*/
+
+.ocultar {
+    display: none;
+}
+
+.titulo {
+    position: fixed;
+    color: red;
+    z-index: 2;
+    writing-mode: vertical-rl;
+    text-combine-upright: none;
+    text-orientation: upright;
+
+}
+
+#t1 {
+    top: 5%;
+    left: 0;
+    font-size: 65px;
+}
+
+
+#t2 {
+    top: 20%;
+    left: 85%;
+    font-size: 90px;
 }
 
 #videoIntro {
@@ -20,11 +61,12 @@ body {
 
 #botaoStart {
     position: fixed;
-    top: 800px;
-    left: 90%;
+    top: 85%;
+    left: 68.5%;
     width: 250px;
-    height: 250px;
-    color: blue;
+    height: 100px;
+    color: cyan;
     background-color: black;
     z-index: 2;
+    font-size:50px;
 }
