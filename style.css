@@ -17,6 +17,12 @@ body {
  modelo botoes
 */
 
+.escondido {
+    opacity: 0;
+
+}
+
+
 .ocultar {
     display: none;
 }
@@ -68,5 +74,5 @@ body {
     color: cyan;
     background-color: black;
     z-index: 2;
-    font-size:50px;
+    font-size: 50px;
 }
