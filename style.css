@@ -2,29 +2,19 @@ body {
     background-color: black;
 }
 
-/*LEMBRAR DO Z INDEXXX
-
-
-#teste {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    z-index: 3;
-    top: 100px;
-    left: 800px;
-    opacity: 0;
-}
- modelo botoes
-*/
-
 .escondido {
-    opacity: 0;
-
+    opacity: 0 !important;
 }
 
-
-.ocultar {
-    display: none;
+.caixaDialogo {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1600px;
+    height: 220px;
+    color: yellow;
+    background-color: darkorange;
 }
 
 .titulo {
@@ -34,7 +24,6 @@ body {
     writing-mode: vertical-rl;
     text-combine-upright: none;
     text-orientation: upright;
-
 }
 
 #t1 {
@@ -75,4 +64,52 @@ body {
     background-color: black;
     z-index: 2;
     font-size: 50px;
+}
+
+.btNext {
+    position: fixed;
+    top: 85%;
+    left: 68.5%;
+    width: 250px;
+    height: 100px;
+    color: cyan;
+    background-color: black;
+    z-index: 2;
+    font-size: 50px;
+}
+
+#cena1 {
+    display: none;
+}
+
+#cena2 {
+    display: none;
+}
+
+#cena3 {
+    display: none;
+}
+
+#cena4 {
+    display: none;
+}
+
+#cena5 {
+    display: none;
+}
+
+#cena6 {
+    display: none;
+}
+
+#cena7 {
+    display: none;
+}
+
+.ocultar {
+    display: none !important;
+}
+
+.aparecer {
+    display: block !important;
 }
