@@ -1,20 +1,8 @@
-/*const botaoteste = document.getElementById("teste")
-
-
-botaoteste.addEventListener("click", () => {
-alert("funciona!")
-
-
-})
-
-funciona ideia do botao deixar transparente
-*/
 const telaInicial = document.getElementById("telaInicial")
 
-
-const botoesNext = document.querySelector(".btNext")
+const botoesNext = document.querySelectorAll(".btNext")
 const botaoStart = document.getElementById("botaoStart")
-
+const botaoEsc1 = document.getElementById("btnEsc1")
 
 const cena1 = document.getElementById("cena1")
 const cena2 = document.getElementById("cena2")
@@ -24,24 +12,37 @@ const cena5 = document.getElementById("cena5")
 const cena6 = document.getElementById("cena6")
 const cena7 = document.getElementById("cena7")
 
+const texto1 = document.querySelectorAll(".C1")
+const texto2 = document.querySelectorAll(".C2")
+const texto3 = document.querySelectorAll(".C3")
+const texto4 = document.querySelectorAll(".C4")
+const texto5 = document.querySelectorAll(".C5")
+const texto6 = document.querySelectorAll(".C6")
+const texto7 = document.querySelectorAll(".C7")
 
+const dia1 = document.getElementById("dia1")
 
-const texto1 = document.querySelectorAll("C1")
-const texto2 = document.querySelectorAll("C2")
-const texto3 = document.querySelectorAll("C3")
-const texto4 = document.querySelectorAll("C4")
-const texto5 = document.querySelectorAll("C5")
-const texto6 = document.querySelectorAll("C6")
-const texto7 = document.querySelectorAll("C7")
-
-texto1.classList.add("ocultar")
-texto2.classList.add("ocultar")
-texto3.classList.add("ocultar")
-texto4.classList.add("ocultar")
-texto5.classList.add("ocultar")
-texto6.classList.add("ocultar")
-texto7.classList.add("ocultar")
-
+texto1.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto2.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto3.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto4.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto5.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto6.forEach(texto => {
+    texto.style.display = 'none'
+})
+texto7.forEach(texto => {
+    texto.style.display = 'none'
+})
 
 let indiceCena1 = 0
 let indiceCena2 = 0
@@ -51,16 +52,12 @@ let indiceCena5 = 0
 let indiceCena6 = 0
 let indiceCena7 = 0
 
-
-
-
-
 botaoStart.addEventListener("click", () => {
-    telaInicial.classList.add("ocultar")
-    cena1.classList.add("aparecer")
+    telaInicial.style.display = 'none'
+    cena1.style.display = 'block'
 })
 
-
+texto1[0].style.display = 'block';
 
 botoesNext[0].addEventListener("click", () => {
 
@@ -73,9 +70,8 @@ botoesNext[0].addEventListener("click", () => {
     }
 
     else {
-        cena1.style.display = 'none'
-        cena2.style.display = 'block'
-        texto2[0].style.display = 'block'
-
+        dia1.style.display = 'none'
+        botoesNext[0].style.display = 'none'
+        bt1.style.display = 'block'
     }
 })
