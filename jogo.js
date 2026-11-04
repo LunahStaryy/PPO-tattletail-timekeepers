@@ -20,7 +20,7 @@ const texto5 = document.querySelectorAll(".C5")
 const texto6 = document.querySelectorAll(".C6")
 const texto7 = document.querySelectorAll(".C7")
 
-const dia1 = document.getElementById("dia1")
+const dialogos = document.querySelectorAll(".caixaDialogo")
 
 texto1.forEach(texto => {
     texto.style.display = 'none'
@@ -70,8 +70,30 @@ botoesNext[0].addEventListener("click", () => {
     }
 
     else {
-        dia1.style.display = 'none'
+        dialogos[0].style.display = 'none'
         botoesNext[0].style.display = 'none'
-        bt1.style.display = 'block'
+        botaoEsc1.style.display = 'block'
+    }
+})
+
+botaoEsc1.addEventListener("click", () => {
+    cena1.style.display = 'none'
+    cena2.style.display = 'block'
+    texto2[0].style.display = 'block';
+})
+
+botoesNext[1].addEventListener("click", () => {
+
+    texto2[indiceCena2].style.display = 'none';
+
+    indiceCena2++;
+
+    if (indiceCena2 < texto2.length) {
+        texto2[indiceCena2].style.display = 'block';
+    }
+
+    else {
+        dialogos[1].style.display = 'none'
+        botoesNext[1].style.display = 'none'
     }
 })
